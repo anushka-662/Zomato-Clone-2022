@@ -1,5 +1,5 @@
-import mangoose, { mongo } from "mangoose";
+import mongoose from "mongoose";
 
 export default async () => {
-  return mangoose.connect(MONGO_URI);
+  return mongoose.connect(process.env.MONGO_URL);
 };
